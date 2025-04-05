@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  grid-template-rows: repeat(9, 40px);
+  gap: 0;
+  width: fit-content;
+  border: 3px solid black;
+  box-sizing: cintent-box;
+  margin: 20px auto;
+}
+
+.sudoku-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #ccc
+}
+
+.sudoku-cell.top-border {
+  border-top: 2px solid black;
+}
+
+.sudoku-cell.left-border {
+  border-left: 2px solid black;
+}
+
+.sudoku-cell.right-border {
+  border-right: 2px solid black;
+}
+
+.sudoku-cell.bottom-border {
+  border-bottom: 2px solid black;
+}
+
+.sudoku-cell.fixed {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.sudoku-cell.editable {
+  background-color: white;
+}
+
+.sudoku-cell.focus {
+  background-color: #def;
+}
+
+.sudoku-cell.invalid {
+  background-color: #ffe5e5;
+  border: 2px solid red;
+}
+
+.congrats {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
