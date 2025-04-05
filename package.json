@@ -1,6 +1,6 @@
 {
-  "homepage": "https://saintbig.github.io"
-  "name": "Sudoku Game",
+  "homepage": "https://SaintBig.github.io/Sudoku_Game",
+  "name": "sudoku-game",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
